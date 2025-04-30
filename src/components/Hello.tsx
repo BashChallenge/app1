@@ -9,8 +9,11 @@ const Hello = ({ value }) => {
 
   return (
     <>
+ 
       <h1>{count}</h1>
       <button onClick={onIncrement}>incrementar </button>
+      <footer>
+</footer>
     </>
   )
 }
