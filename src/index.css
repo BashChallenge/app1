@@ -28,6 +28,7 @@ button {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
+
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -45,4 +46,66 @@ body.dark button {
 
 button:hover {
   opacity: 0.9;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.082);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color:rgb(237 224 224);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+body.light .modal {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+body.dark .modal {
+  background-color: #333333; 
+  color: #ffffff; 
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); 
+}
+
+.modal h2 {
+  margin-bottom: 1rem;
+font-size: 16px;
+}
+
+.modal p {
+  margin-bottom: 1.5rem;
+font-size: 14px;
+}
+
+.modal button {
+  background-color: #007bff; 
+  color: #ffffff; 
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.modal button:hover {
+  background-color: #0056b3;
 }
