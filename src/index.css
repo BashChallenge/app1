@@ -23,3 +23,26 @@ width: 100vw;
   color: rgb(0, 0, 0);
 
 }
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.light button {
+  background-color: #007bff; 
+  color: #ffffff;
+}
+
+body.dark button {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
